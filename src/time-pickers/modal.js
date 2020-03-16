@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-
+import Button from '@material-ui/core/Button';
 const useStyles = makeStyles(theme => ({
   modal: {
     display: 'flex',
@@ -33,9 +33,10 @@ export default function TransitionsModal() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
-      </button>
+    <Button variant="contained" color="primary" onClick={handleOpen}>
+        open modal
+    </Button>
+
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -48,6 +49,7 @@ export default function TransitionsModal() {
           timeout: 500,
         }}
       >
+        {/* モーダルの内容 */}
         <Fade in={open}>
           <div className={classes.paper}>
             <h2 id="transition-modal-title">Transition modal</h2>
