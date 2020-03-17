@@ -1,10 +1,11 @@
 import React from 'react';
-//import BasicTextFields from 'TodoTextFileds';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
+import DatePickers from './datePicker';
+import TimePickers from './timePicker';
 const useStyles = makeStyles(theme => ({
   modal: {
     display: 'flex',
@@ -52,8 +53,10 @@ export default function TransitionsModal() {
         {/* モーダルの内容 */}
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
+            {/* <h2 id="transition-modal-title">Transition modal</h2>
+            <p id="transition-modal-description">react-transition-group animates me.</p> */}
+            <DatePickers />
+            <TimePickers />
           </div>
         </Fade>
       </Modal>
@@ -61,4 +64,3 @@ export default function TransitionsModal() {
   );
 }
 
-//export default modal;
