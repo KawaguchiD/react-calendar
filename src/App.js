@@ -5,14 +5,14 @@ import React from 'react';
 //import Jancal from './calendar/gridcal'
 //import TransitionsModal from './time-pickers/modal';
 import OutlinedButtons from './calendar/calendar';
-import SimpleTable from './calendar/tableCalendar'
+import StaticDatePicker from './calendar/datePickerCal'
 //import { makeStyles } from '@material-ui/core/styles';
 function App() {
   return (
     <>
     {/* <TransitionsModal /> */}
     <OutlinedButtons />
-    <SimpleTable />
+    <StaticDatePicker />
     </>
   );
 }
