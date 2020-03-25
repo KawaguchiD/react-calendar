@@ -3,7 +3,7 @@ import React from 'react';
 import MomentUtils from '@date-io/moment';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers'
 //import Calendar from './calendar/calendar';
-import TransitionsModal from './time-pickers/modal';
+//import TransitionsModal from './time-pickers/modal';
 //import Jancal from './calendar/gridcal'
 //import TransitionsModal from './time-pickers/modal';
 //import OutlinedButtons from './calendar/calendar';
@@ -13,7 +13,6 @@ function App() {
   return (
     <MuiPickersUtilsProvider utils={MomentUtils}>
       <StaticDatePicker />
-      <TransitionsModal/>
     </MuiPickersUtilsProvider>
   );
 }
